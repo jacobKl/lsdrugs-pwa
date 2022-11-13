@@ -1,0 +1,109 @@
+$danger: #F22233;
+$primary: #012326;
+$secondary: #027353;
+$success: #03A66A;
+$blue: #012840;
+$white: #eee;
+$dark: #121212;
+$light: #E8E8E8;
+
+$body-bg: #fff;
+$body-color: #121212;
+
+body {
+    background: $light;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.app-wrapper {
+    max-width: 500px;
+    background: $body-bg;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.logo-part {
+    color: $secondary;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.substance-image-col {
+    height: 100%;
+    filter: brightness(.9);
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.substance {
+    align-items: stretch;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,.4);
+    border-radius: 8px;
+    overflow: hidden;
+
+    &-img {
+        max-height: 150px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.substance-desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+
+a {
+    color: $secondary;
+    text-decoration: none;
+    transition: .4s;
+
+    &:hover {
+        color: $primary;
+        transition: .4s;
+    }
+}
+
+.btn-primary {
+    color: white;
+    background: $secondary;
+
+    &:hover {
+        background: $primary;
+    }
+}
+
+.tooltip-content {
+    display: none;
+}
+
+.substance-content {
+    img {
+        display: none;
+    }
+
+    a {
+        display: none;
+    }
+
+    .tooltip {
+        display: inline;
+    }
+
+    h2 {
+        text-transform: none;
+        font-weight: 700;
+    }
+}
